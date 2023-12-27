@@ -4,7 +4,7 @@
     - ExpenseNote
 - 프로젝트 설명
     - 비용 지출을 관리하는 웹 에플리케이션입니다.
-- Github
+- Github<br/>
     [Github-link](https://github.com/onepice0807/ExpenseNote)
     
 - 기능
