@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import GlobalStyle from './styles/globalStyles';
-import { AddPage, AuthPage, DashboardPage, ErrorPage, MyPage, Root } from './pages';
+import { AuthPage, DashboardPage, ErrorPage, MyPage, Root, ExpensePage } from './pages';
 
 const App = () => {
   const router = createBrowserRouter([
