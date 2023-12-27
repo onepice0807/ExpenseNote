@@ -1,8 +1,7 @@
-// App.jsx
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import GlobalStyle from './styles/globalStyles';
-import { AuthPage, DashboardPage, ErrorPage, Root } from './pages';
+import { AddPage, AuthPage, DashboardPage, ErrorPage, MyPage, Root } from './pages';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -12,7 +11,9 @@ const App = () => {
       errorElement: <ErrorPage />,
       children: [
         { index: true, element: <DashboardPage /> },
-        { path: 'auth', element: <AuthPage /> }
+        { path: 'auth', element: <AuthPage /> },
+        { path: 'mypage', element: <MyPage /> },
+        { path: 'expense', children: [{ path: ':type', elemeent: <ExpensePage /> }] }
       ]
     }
   ]);
